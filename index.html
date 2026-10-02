@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Nova Cart</title>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css"></head><body>
+
+<div id="login"><div class="lbox">
+<h1>Nova <span style="color:var(--acc)">Cart</span></h1>
+<p id="lsub">Sign in to get groceries and essentials in minutes.</p>
+<label for="em">Email</label><input id="em" type="email" placeholder="you@example.com" autocomplete="email">
+<label for="pw">Password</label><input id="pw" type="password" placeholder="At least 6 characters" autocomplete="current-password">
+<div id="nameBox" style="display:none"><label for="nm">Full name</label><input id="nm" placeholder="Your name"></div>
+<div id="roleBox" style="display:none"><label for="role">I am a</label><select id="role"><option value="shopper">Shopper</option><option value="partner">Partner store owner</option></select></div><div id="storeBox" style="display:none"><label for="store">Your store</label><select id="store"></select></div>
+<div id="lerr" class="msg" style="display:none"></div>
+<button class="btn" id="lgo" style="width:100%;margin-top:16px">Sign In</button>
+<p style="margin-top:14px;font-size:14px"><span id="ltxt">New here?</span> <button class="link" id="ltog">Create an Account</button></p>
+<p style="font-size:12px">Demo: any valid email and a 6+ character password works. Tick "Partner store owner" when creating an account to see the store dashboard.</p>
+</div></div>
+
+<div id="app" style="display:none">
+<aside id="side"></aside><main id="main"></main></div>
+
+<script src="firebase-config.js"></script><script src="db.js"></script><script src="app.js"></script></body></html>
